@@ -1,0 +1,31 @@
+<!-- <section fxLayout="column" fxFlexAlign="stretch">
+    <div fxFlexAlign="center">
+      <p>Welcome to the Material Angular OwnerAccount Application</p>
+    </div>
+    <p>In this application we are going to work with:</p>
+    <mat-tab-group (selectedTabChange)="executeSelectedChange($event)">
+      <mat-tab label="Material Components"> 
+        <p>We are going to use different material components to create nice looking angular app.</p> 
+      </mat-tab>
+      <mat-tab label="Consume .NET Core Web API">
+         <p>We will consume our .NET Core application. Basically, we will create complete CRUD client app.</p>
+        </mat-tab>
+      <mat-tab label="Fully responsive navigation menu">
+         <p>By using material components, we are going to create fully responsive navigation menu, with its side-bar as well.</p>
+        </mat-tab>
+    </mat-tab-group>
+  </section> -->
+
+  <app-layout>
+    <mat-sidenav-container>
+      <mat-sidenav #sidenav role="navigation">
+        <!--this is a place for us to add side-nav code-->
+      </mat-sidenav>
+      <mat-sidenav-content>
+        <!--in here all the content must reside. We will add a navigation header as well-->
+        <main>
+          <router-outlet></router-outlet>
+        </main>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+  </app-layout>

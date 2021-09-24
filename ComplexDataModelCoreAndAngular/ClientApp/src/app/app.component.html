@@ -1,6 +1,30 @@
-<body>
+<!-- <body>
   <app-nav-menu></app-nav-menu>
   <div class="container">
     <router-outlet></router-outlet>
   </div>
-</body>
+</body> -->
+
+<!-- <app-layout>
+  <app-homes></app-homes>
+</app-layout> -->
+<style>
+  mat-sidenav-container, mat-sidenav-content, mat-sidenav {
+    height: 100%;
+}
+
+mat-sidenav {
+    width: 250px;
+}
+
+main {
+    padding: 10px;
+}
+</style>
+
+<mat-sidenav-content>
+  <app-header (sidenavToggle)="sidenav.toggle()"></app-header>
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+</mat-sidenav-content>
