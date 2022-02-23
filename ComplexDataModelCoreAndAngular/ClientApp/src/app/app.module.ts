@@ -18,7 +18,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { LayoutComponent } from './layout/layout.component';
 import { HomesComponent } from './homes/homes.component';
 import { RoutingModule } from './routing/routing.module';
-import { HeaderComponent } from './navigation/header/header.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
